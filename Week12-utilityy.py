@@ -57,6 +57,14 @@ def Union(list1,list2):
         list1.append(i)
     print('OUTPUT', list1)
 
+def Intersection(list1,list2):
+    output=[]
+    for i in list1:
+        for j in list2:
+            if i==j:
+                output.append(i)
+    print('OUTPUT', output)
+
 
         
 
