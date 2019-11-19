@@ -15,5 +15,15 @@ def LoadFile(file):
         l.append(line.split(','))
     print('OUTPUT', l)
 
+def UpdateString(string1, string2, index):
+    string10=''
+    counter=-1
+    for i in string1:
+        counter+=1
+        if counter==index:
+            i=string2
+        string10+=i
+    print('OUTPUT', string10)
+
 
     
