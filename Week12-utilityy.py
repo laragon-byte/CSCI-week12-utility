@@ -32,5 +32,29 @@ def FindWordCount(listt,string):
             counter+=1
     print('OUTPUT',counter)
 
+def ScoreFinder(players, scores, name):
+    check=0
+    counter=-1
+    index=0
+    listt=[]
+    name_lower=name.lower()
+    print(name)
+    for i in players:
+        i=i.lower()
+        listt.append(i)
+    for i in listt:
+        counter+=1
+        if i==name_lower:
+            check+=1
+            index=counter
+    if check==0:
+        print('OUTPUT player not found')
+    else:
+        score=scores[index]
+        print('OUTPUT', name,'got a score of', score)
+
+    
+        
+
 
     
