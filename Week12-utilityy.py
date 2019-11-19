@@ -52,8 +52,12 @@ def ScoreFinder(players, scores, name):
     else:
         score=scores[index]
         print('OUTPUT', name,'got a score of', score)
+def Union(list1,list2):
+    for i in list2:
+        list1.append(i)
+    print('OUTPUT', list1)
 
-    
+
         
 
 
