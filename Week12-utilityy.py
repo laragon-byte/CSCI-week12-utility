@@ -25,5 +25,12 @@ def UpdateString(string1, string2, index):
         string10+=i
     print('OUTPUT', string10)
 
+def FindWordCount(listt,string):
+    counter=0
+    for i in listt:
+        if i==string:
+            counter+=1
+    print('OUTPUT',counter)
+
 
     
